@@ -13,7 +13,10 @@ import { BrowserRouter as Router, Route } from 'react-router-dom';
 ReactDOM.render((
   <Router>
     <div>
-      <h1>Home!</h1>
+      <Navbar />
+      <Route exact path="/" component={Home} />
+      <Route exact path="/about" component={About} />
+      <Route exact path="/login" component={Login} />
     </div>
   );
 };
